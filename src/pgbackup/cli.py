@@ -7,7 +7,7 @@ class DriverAction(Action):
         namespace.destination = destination     
 
 
-def create_parser():
+def create_parser():        
     parser = ArgumentParser(description="""
     Back up PostgreSQL databases locally or to AWS S3.
     """)
