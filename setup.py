@@ -4,7 +4,7 @@ with open('README.md', 'r') as f:
     long_description = f.read()
 
 setup(
-    name = 'pgpackup',
+    name = 'pgbackup',
     version='0.1.0',
     author='Ramesh Subramanian',
     author_email='rameshinthecloud@gmail.com',
@@ -15,6 +15,7 @@ setup(
     packages=find_packages('src'),
     package_dir={'':'src'},
     install_requires=['boto3'],
+    python_reequires='>3.6',
     entry_points={
         'console_scripts':[
             'pgbackup=pgbackup.cli:main'
